@@ -1241,8 +1241,8 @@ button {
 /* Coordinators Grid */
 .coordinators-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 32px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
 }
 
 .coordinator-card {
@@ -1265,7 +1265,7 @@ button {
 .coordinator-media {
   position: relative;
   width: 100%;
-  height: 330px;
+  height: 260px;
   background: #0d0f18;
   overflow: hidden;
   cursor: pointer;
