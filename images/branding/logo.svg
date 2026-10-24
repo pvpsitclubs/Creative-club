@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <defs>
+    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8B5CF6" />
+      <stop offset="50%" stop-color="#EC4899" />
+      <stop offset="100%" stop-color="#FF5B37" />
+    </linearGradient>
+  </defs>
+  <rect x="8" y="8" width="84" height="84" rx="24" fill="#131520" stroke="url(#brandGrad)" stroke-width="3"/>
+  <path d="M62 34 C58 28 48 26 38 32 C27 38 26 52 28 62 C30 72 44 76 56 72 C62 70 66 64 68 58" stroke="url(#brandGrad)" stroke-width="7" stroke-linecap="round" fill="none"/>
+  <rect x="58" y="38" width="10" height="10" rx="2" fill="#CCFF00" />
+  <rect x="72" y="48" width="8" height="8" rx="2" fill="#8B5CF6" />
+  <rect x="54" y="58" width="9" height="9" rx="2" fill="#FF5B37" />
+</svg>

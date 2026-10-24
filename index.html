@@ -3,360 +3,830 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Creative Club: Where Soul Meets Screen</title>
+  <title>Creative Club | CSD &amp; CSM — PVPSIT | Where Soul Meets Screen</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Official website of the Creative Club at Prasad V. Potluri Siddhartha Institute of Technology (PVPSIT), CSE (AI & ML and Data Science). Celebrating creative writing, digital art, short filmmaking, and AI storytelling.">
+  <meta name="keywords" content="Creative Club, PVPSIT, CSM, CSD, Siddhartha Institute of Technology, student art, digital creativity, short film, AI storytelling">
+  <meta name="author" content="Creative Club PVPSIT">
+  <meta name="theme-color" content="#0b0c13">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-  
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  
-  <!-- Font Awesome -->
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:title" content="Creative Club | CSD &amp; CSM — PVPSIT">
+  <meta property="og:description" content="A vibrant community of designers, storytellers, filmmakers, and AI creative technologists at PVPSIT.">
+  <meta property="og:image" content="images/branding/header.png">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="images/branding/logo.svg">
+
+  <!-- Google Fonts Preconnect & Stylesheets -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6.5.2 -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-  
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="style.css">
-</head>
 
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css?v=20261024e">
+</head>
 <body>
 
-  <!-- Header college logo -->
-  <img src="images/aids.jpg" alt="AIML Club Logo" class="img-fluid">
+  <!-- Fixed Cinematic Background Artwork (like cultural club) -->
+  <div class="site-backdrop-canvas" aria-hidden="true">
+    <img src="images/hero/creative-club-bg.jpg" alt="Creative Club PVPSIT Artwork" class="backdrop-art-img" loading="eager">
+    <div class="backdrop-overlay-gradient"></div>
+    <div class="backdrop-overlay-radial"></div>
+    <div class="backdrop-ambient-glow glow-violet"></div>
+    <div class="backdrop-ambient-glow glow-magenta"></div>
+  </div>
 
-  <!-- Nav Bar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-    <div class="container">
-      <a class="navbar-brand" href="#">Creative Club
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#activities">Activities</a></li>
-          <li class="nav-item"><a class="nav-link" href="#gallery">Event Highlights</a></li>
-          <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
-          <li class="nav-item"><a class="nav-link" href="#join-us">Join Us</a></li>
-        </ul>
-      </div>
+  <!-- Custom Cursor Elements (Desktop) -->
+  <div class="custom-cursor-dot" aria-hidden="true"></div>
+  <div class="custom-cursor-outline" aria-hidden="true"></div>
+
+  <!-- =========================================================================
+       1. INSTITUTIONAL TOP BANNER (FULL PVPSIT BANNER)
+       ========================================================================= -->
+  <aside class="college-top-banner-wrapper" aria-label="PVPSIT Department of CSE Banner">
+    <div class="banner-inner-container">
+      <img src="images/branding/pvpsit-banner.png" alt="Prasad V. Potluri Siddhartha Institute of Technology — Department of Computer Science & Engineering (AI & ML and Data Science)" class="college-full-banner-img">
     </div>
-  </nav>
+  </aside>
 
-  <!-- Header -->
-  <header class="container-fluid p-0">
-    <div class="row g-0 align-items-stretch">
-      <!-- Left Side: Image -->
-      <div class="col-md-6" style="background-image: url('images/header.png');" role="presentation"></div>
-      
-      <!-- Right Side: Vision & Mission -->
-      <div class="col-md-6">
-        <div class="text-center text-md-start">
-         <u> <h1>Creative Club</h1></u>
-          <p><span>Vision:</span> To foster a vibrant literary and creative culture among students by providing platforms that encourage original thinking, expressive storytelling, critical dialogue, and impactful performance.</p>
-          <p><span>Mission:</span> Blending words and pixels to spark creativity, expression, and innovation.</p>
+
+  <!-- =========================================================================
+       2. MAIN NAVIGATION BAR
+       ========================================================================= -->
+  <header>
+    <nav class="main-navbar" aria-label="Main Navigation">
+      <div class="nav-container">
+        <!-- Brand Logo -->
+        <a href="#hero" class="nav-brand" aria-label="Creative Club Homepage">
+          <div class="nav-logo-icon">
+            <img src="images/branding/logo.svg" alt="Creative Club Logo">
+          </div>
+          <div class="nav-brand-text">
+            <span class="nav-title">Creative Club</span>
+            <span class="nav-subtitle">CSD &amp; CSM • PVPSIT</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <ul class="nav-links-desktop">
+          <li class="nav-link-item"><a href="#hero" class="active">Home</a></li>
+          <li class="nav-link-item"><a href="#about">About</a></li>
+          <li class="nav-link-item"><a href="#coordinators">Coordinators</a></li>
+          <li class="nav-link-item"><a href="#events-2026">Events</a></li>
+          <li class="nav-link-item"><a href="#highlights-2025">2025 Highlights</a></li>
+          <li class="nav-link-item"><a href="#activities">Workshops</a></li>
+          <li class="nav-link-item"><a href="#gallery">Gallery</a></li>
+          <li class="nav-link-item"><a href="#contact">Contact</a></li>
+        </ul>
+
+        <!-- Mobile Toggle (No Join the Tribe button) -->
+        <div class="nav-actions">
+          <button class="mobile-nav-toggle" aria-label="Toggle navigation menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
         </div>
       </div>
-    </div>
+    </nav>
   </header>
 
-<!-- About Section -->
+  <!-- Mobile Drawer & Overlay -->
+  <div class="mobile-overlay" aria-hidden="true"></div>
+  <aside class="mobile-drawer" aria-label="Mobile Navigation Drawer">
+    <ul class="mobile-nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#coordinators">Coordinators</a></li>
+      <li><a href="#events-2026">Events</a></li>
+      <li><a href="#highlights-2025">2025 Highlights</a></li>
+      <li><a href="#activities">Workshops</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="mobile-drawer-footer">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSf3g5P98mC7WWsFS6Jt0eiNQpFQJM95ToTq42I9EgoBmUNXsQ/viewform?usp=header" target="_blank" rel="noopener" class="btn-primary-glow" style="width: 100%; justify-content: center;">
+        <span>Join Creative Club</span>
+        <i class="fa-solid fa-arrow-right"></i>
+      </a>
+    </div>
+  </aside>
 
-<section id="about" class="about-section scroll-reveal">
-  <div class="container">
-    <h2 class="section-title text-center mb-5">About the Club</h2>
-    <div class="row g-4 text-center">
-      
-      <div class="col-md-6">
-        <div class="card">
-          <i class="fas fa-feather icon"></i>
-          <h4>Traditional Expression</h4>
-          <p>
-            Dive into the timeless world of storytelling, poetry, and spoken word. Our workshops and open mics are a stage for your voice, where classic artistry meets a modern audience. We celebrate the power of the pen and the passion of the performance.
+  <main>
+    <!-- =======================================================================
+         3. HERO SECTION
+         ======================================================================= -->
+    <section id="hero" class="hero-section">
+      <div class="section-container">
+        <div class="hero-grid hero-grid-centered">
+          
+          <!-- Centered Hero Content -->
+          <div class="hero-content hero-content-centered">
+            <div class="hero-badge-pill">
+              <span class="pulse-dot"></span>
+              <span>PVPSIT • DEPARTMENT OF CSD &amp; CSM</span>
+            </div>
+
+            <h1 class="hero-headline hero-title-main">
+              Creative Club
+            </h1>
+
+            <h2 class="hero-branch-sub">
+              CSD &amp; CSM Branch
+            </h2>
+
+            <p class="hero-college-name">
+              Prasad V. Potluri Siddhartha Institute of Technology
+            </p>
+
+            <p class="hero-subtext hero-subtext-centered">
+              Where soul meets screen. Ideas become art, creativity becomes culture. A boundary-pushing collective at PVPSIT fostering original storytelling, digital design, short filmmaking, and AI-driven creative experimentation.
+            </p>
+
+            <div class="hero-cta-group hero-cta-centered">
+              <a href="#events-2026" class="btn-primary-glow">
+                <span>Explore Events &amp; Workshops</span>
+                <i class="fa-solid fa-arrow-down"></i>
+              </a>
+              <a href="#coordinators" class="btn-outline-glow">
+                <span>Meet Coordinators</span>
+                <i class="fa-solid fa-users"></i>
+              </a>
+              <a href="documents/Creative_club_summary_report_2026.pdf" target="_blank" rel="noopener" class="btn-text-report" title="View 2026 Summary Report">
+                <i class="fa-solid fa-file-pdf"></i>
+                <span>2026 Report</span>
+              </a>
+              <a href="documents/Creative_Club_Report.pdf" target="_blank" rel="noopener" class="btn-text-report" title="View 2025 Club Report">
+                <i class="fa-solid fa-file-lines"></i>
+                <span>2025 Report</span>
+              </a>
+            </div>
+
+            <!-- Trust / Engagement Stats -->
+            <div class="hero-stats-row hero-stats-centered">
+              <div class="stat-item">
+                <span class="stat-num">100+</span>
+                <span class="stat-label">Student Creators</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-num">15+</span>
+                <span class="stat-label">Creative Labs</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-num">2</span>
+                <span class="stat-label">Active Batches</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-num">1</span>
+                <span class="stat-label">Shared Passion</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         4. KINETIC MARQUEE / TICKER STRIP
+         ======================================================================= -->
+    <div class="marquee-strip" aria-hidden="true">
+      <div class="marquee-track">
+        <div class="marquee-content">
+          <span>Imagine</span> <span class="separator">•</span>
+          <span class="glow-word">Create</span> <span class="separator">•</span>
+          <span>Collaborate</span> <span class="separator">•</span>
+          <span class="glow-word">Inspire</span> <span class="separator">•</span>
+          <span>Storytelling</span> <span class="separator">•</span>
+          <span class="glow-word">Digital Pixels</span> <span class="separator">•</span>
+          <span>Short Films</span> <span class="separator">•</span>
+          <span class="glow-word">AI Comics</span> <span class="separator">•</span>
+          <span>Graphic Design</span> <span class="separator">•</span>
+          <span class="glow-word">Creative Culture</span> <span class="separator">•</span>
+        </div>
+        <div class="marquee-content">
+          <span>Imagine</span> <span class="separator">•</span>
+          <span class="glow-word">Create</span> <span class="separator">•</span>
+          <span>Collaborate</span> <span class="separator">•</span>
+          <span class="glow-word">Inspire</span> <span class="separator">•</span>
+          <span>Storytelling</span> <span class="separator">•</span>
+          <span class="glow-word">Digital Pixels</span> <span class="separator">•</span>
+          <span>Short Films</span> <span class="separator">•</span>
+          <span class="glow-word">AI Comics</span> <span class="separator">•</span>
+          <span>Graphic Design</span> <span class="separator">•</span>
+          <span class="glow-word">Creative Culture</span> <span class="separator">•</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- =======================================================================
+         5. ABOUT SECTION
+         ======================================================================= -->
+    <section id="about" class="section-wrapper">
+      <div class="section-container">
+        
+        <div class="section-header">
+          <span class="section-tag">About The Collective</span>
+          <h2 class="section-title">
+            The Philosophy of <span class="italic-highlight">Creative Club</span>
+          </h2>
+          <p class="section-subtitle">
+            Creative Club was born out of a desire to unite the eloquence of classical literary expression with the infinite creative canvas of digital pixels and artificial intelligence.
           </p>
         </div>
+
+        <!-- Mission & Vision Cards -->
+        <div class="about-grid">
+          <div class="about-card-editorial mission-card">
+            <div class="about-card-header">
+              <div class="about-icon-badge">
+                <i class="fa-solid fa-bullseye"></i>
+              </div>
+              <h3 class="about-card-title">Our Mission</h3>
+            </div>
+            <p class="about-card-text">
+              Blending words and pixels to spark creativity, expression, and innovation. We empower students to express raw emotions through modern mediums, bridging the gap between classical art and cutting-edge digital media.
+            </p>
+          </div>
+
+          <div class="about-card-editorial vision-card">
+            <div class="about-card-header">
+              <div class="about-icon-badge">
+                <i class="fa-solid fa-eye"></i>
+              </div>
+              <h3 class="about-card-title">Our Vision</h3>
+            </div>
+            <p class="about-card-text">
+              To foster a vibrant literary and creative culture among engineering students by providing platforms that encourage original thinking, expressive storytelling, critical dialogue, and impactful performance.
+            </p>
+          </div>
+        </div>
+
+        <!-- 4 Core Pillars Grid -->
+        <div class="pillars-grid">
+          <div class="pillar-card">
+            <span class="pillar-num">01 // LITERARY</span>
+            <h4 class="pillar-title">Traditional Expression</h4>
+            <p class="pillar-desc">Spoken word, extempore poetry, flash fiction, and storytelling celebrating the enduring power of the written pen.</p>
+          </div>
+
+          <div class="pillar-card">
+            <span class="pillar-num">02 // VISUAL</span>
+            <h4 class="pillar-title">Digital Art & Design</h4>
+            <p class="pillar-desc">Poster architecture, typography hierarchy, digital illustrations, and graphic identity design for campus events.</p>
+          </div>
+
+          <div class="pillar-card">
+            <span class="pillar-num">03 // CINEMATIC</span>
+            <h4 class="pillar-title">Visual Storytelling</h4>
+            <p class="pillar-desc">Student short film productions, screenplay scripting, cinematographic framing, and audio podcast creation.</p>
+          </div>
+
+          <div class="pillar-card">
+            <span class="pillar-num">04 // INNOVATION</span>
+            <h4 class="pillar-title">AI & Creative Tech</h4>
+            <p class="pillar-desc">Generative AI narrative synthesis, comic panel generation, prompt engineering, and hybrid human-AI artistic experiments.</p>
+          </div>
+        </div>
+
+        <!-- Faculty Advisor Spotlight -->
+        <div class="faculty-spotlight-wrapper">
+          <div class="faculty-card-editorial">
+            <div class="faculty-photo-col">
+              <div class="faculty-photo-frame">
+                <img src="images/branding/Faculty.jpg" alt="Mrs. Hafeena Mohammed" onerror="this.src='images/branding/header.png'">
+              </div>
+              <span class="faculty-badge">Faculty Advisor</span>
+              <h3 class="faculty-name">Mrs. Hafeena Mohammed</h3>
+              <p class="faculty-desig">Assistant Professor, CSE (Data Science)</p>
+            </div>
+
+            <div class="faculty-message-col">
+              <div class="faculty-quote-icon">
+                <i class="fa-solid fa-quote-left"></i>
+              </div>
+              <p class="faculty-quote-text">
+                "The Creative Club at PVPSIT is a platform to nurture imagination, expression and innovation. Through words and pixels, we aim to inspire originality and build a vibrant community of storytellers and creators."
+              </p>
+              <div class="faculty-meta-tags">
+                <span class="meta-pill"><i class="fa-solid fa-building-columns"></i> PVPSIT Autonomous</span>
+                <span class="meta-pill"><i class="fa-solid fa-laptop-code"></i> Department of CSE (Data Science)</span>
+                <span class="meta-pill"><i class="fa-solid fa-shield-halved"></i> Faculty Guidance</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
-      
-      <div class="col-md-6">
-        <div class="card">
-          <i class="fas fa-laptop-code icon"></i>
-          <h4>Digital Creativity</h4>
-          <p>
-            Explore the frontier of digital art. From short film challenges and podcast sessions to graphic design and meme creation, we empower you to translate your creative vision to the screen. We believe that pixels can be just as powerful as prose.
+    </section>
+
+    <!-- =======================================================================
+         6. COORDINATORS SECTION (2025 & 2026 BATCHES)
+         ======================================================================= -->
+    <section id="coordinators" class="section-wrapper section-alt">
+      <div class="section-container">
+        
+        <div class="section-header">
+          <span class="section-tag">Meet Our Coordinators</span>
+          <h2 class="section-title">
+            The People Behind the <span class="italic-highlight">Imagination</span>
+          </h2>
+          <p class="section-subtitle">
+            Switch between the current student team steering the club today and our senior mentors who founded Creative Club.
           </p>
         </div>
+
+        <!-- Batch Switcher Animated Tabs -->
+        <div class="tab-controls-wrapper">
+          <div class="tab-switcher" role="tablist" aria-label="Coordinator Batch Switcher">
+            <button class="tab-btn coordinator-tab-btn active" data-batch="batch2026" role="tab" aria-selected="true">
+              <i class="fa-solid fa-bolt"></i>
+              <span>Current Coordinators — 2026 Batch</span>
+              <span class="badge-pill">Active</span>
+            </button>
+            <button class="tab-btn coordinator-tab-btn" data-batch="batch2025" role="tab" aria-selected="false">
+              <i class="fa-solid fa-star"></i>
+              <span>Senior Coordinators — 2025 Batch</span>
+              <span class="badge-pill">Founders</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Coordinators Dynamic Grid -->
+        <div id="coordinatorsGrid" class="coordinators-grid" aria-live="polite">
+          <!-- Filled dynamically via script.js from data.js -->
+        </div>
+
       </div>
-      
-    </div>
-  </div>
-</section>
+    </section>
 
-
-<!-- Activities Section -->
- <section id="activities" class="activities-section py-5">
-    <div class="container">
-        <h2 class="section-title text-center mb-5">What We Do</h2>
-        <div class="row row-cols-1 row-cols-md-2 g-4">
-            
-            <div class="col">
-                <div class="card card-animated h-100">
-                    <div class="card-body text-center">
-                        <i class="fas fa-lightbulb icon mb-3"></i>
-                        <h5 class="card-title">Expressive On-the-Spot</h5>
-                        <p class="card-text">Draw a random prompt and perform an original piece in 3 minutes. A thrilling test of spontaneity and creativity.</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col">
-                <div class="card card-animated h-100">
-                    <div class="card-body text-center">
-                        <i class="fas fa-puzzle-piece icon mb-3"></i>
-                        <h5 class="card-title">Story Fragment Challenge</h5>
-                        <p class="card-text">Use assorted fragments like images and notes to collaboratively craft a logical and engaging story against the clock.</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col">
-                <div class="card card-animated h-100">
-                    <div class="card-body text-center">
-                        <i class="fas fa-clapperboard icon mb-3"></i>
-                        <h5 class="card-title">Short Film Creation</h5>
-                        <p class="card-text">Take complete creative control. Brainstorm, script, shoot, and edit an original short film with your team from concept to final cut.</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col">
-                <div class="card card-animated h-100">
-                    <div class="card-body text-center">
-                        <i class="fas fa-robot icon mb-3"></i>
-                        <h5 class="card-title">AI Story-to-Comic</h5>
-                        <p class="card-text">Blend writing and technology. Write a short narrative and use AI tools to generate visuals, transforming your story into a comic strip.</p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-
-
-<!-- Event Highlights Section -->
-<section id="gallery" class="event-highlights-section py-5 scroll-reveal">
-  <div class="container">
-    <h2 class="section-title text-center mb-5">Event Highlights</h2>
-
-    <div class="row g-4">
-      <!-- Row 1 -->
-      <div class="col-md-4 col-sm-6">
-        <div class="event-img-wrapper">
-          <img src="images/event1.png" alt="Event Highlight 1">
-        </div>
-      </div>
-
-      <div class="col-md-4 col-sm-6">
-        <div class="event-img-wrapper">
-          <img src="images/event5.png" alt="Event Highlight 2">
-        </div>
-      </div>
-
-      <div class="col-md-4 col-sm-6">
-        <div class="event-img-wrapper">
-          <img src="images/event2.png" alt="Event Highlight 3">
-        </div>
-      </div>
-
-      <!-- Row 2 -->
-      <div class="col-md-4 col-sm-6">
-        <div class="event-img-wrapper">
-          <img src="images/event3.png" alt="Event Highlight 4">
-        </div>
-      </div>
-
-      <div class="col-md-4 col-sm-6">
-        <div class="event-img-wrapper">
-          <img src="images/event4.png" alt="Event Highlight 5">
-        </div>
-      </div>
-
-      <div class="col-md-4 col-sm-6">
-        <div class="event-img-wrapper">
-          <img src="images/event6.png" alt="Event Highlight 6">
-        </div>
-      </div>
-
-      <!-- Row 3 -->
-      <div class="col-md-4 col-sm-6">
-        <div class="event-img-wrapper">
-          <img src="images/event7.png" alt="Event Highlight 7">
-        </div>
-      </div>
-
-      <div class="col-md-4 col-sm-6">
-        <div class="event-img-wrapper">
-          <img src="images/event8.png" alt="Event Highlight 8">
-        </div>
-      </div>
-
-      <div class="col-md-4 col-sm-6">
-        <div class="event-img-wrapper">
-          <img src="images/event9.png" alt="Event Highlight 9">
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<div class="faculty-box">
-  <div class="faculty-left">
-    <div class="faculty-image">
-      <img src="images/Faculty.jpg" alt="Faculty Advisor">
-    </div>
-    <div class="faculty-details">
-      <p class="faculty-name">Mrs. Hafeena Mohammed</p>
-      <p>Assistant Professor, CSE (Data Science)</p>
-      <p>Faculty Advisor, Creative Club, PVPSIT</p>
-    </div>
-  </div>
-  <div class="faculty-right">
-    <h3>Faculty Advisor</h3>
-    <p>
-      The Creative Club at PVPSIT is a platform to nurture imagination, expression and innovation. 
-      Through words and pixels, we aim to inspire originality and build a vibrant community 
-      of storytellers and creators.
-    </p>
-  </div>
-</div>
-
-<!-- Team Section -->
-<section id="team" class="py-5 scroll-reveal">
-    <div class="container ">
-        <h2 class="text-center mb-5 section-title">Meet the Team</h2>
-        <div class="row g-4 text-center">
-            <!-- Team Member 1 -->
-            <div class="col-md-4">
-                <div class="team-member">
-                     <div class="image-wrapper">
-                        <img src="images/Anjana.jpeg" alt="P. Anjana Manogna">
-                        <div class="team-overlay">"Creativity is contagious."</div>
-                    </div>
-                    <h5 class="mb-1">P. Anjana Manogna</h5>
-                    <p class="text-muted">Coordinator (CSM)</p>
-            </div>
+    <!-- =======================================================================
+         7. EVENTS 2026 & OFFICIAL WINNERS SECTION
+         ======================================================================= -->
+    <section id="events-2026" class="section-wrapper">
+      <div class="section-container">
+        
+        <div class="section-header">
+          <span class="section-tag">Flagship Milestones • 2026</span>
+          <h2 class="section-title">
+            Creative Club Events <span class="italic-highlight">2026</span>
+          </h2>
+          <p class="section-subtitle">
+            Two signature creative events conducted on <strong>22 August 2026</strong> celebrating team storytelling relays, future brand transformation, and generative AI creative excellence.
+          </p>
         </div>
 
-            <!-- Team Member 2 -->
-            <div class="col-md-4">
-                 <div class="team-member">
-                    <div class="image-wrapper">
-                    <img src="images/lasya.jpg"alt="A.Lasya Sree">
-                    <div class="team-overlay">"Words are my music."</div>
-                    </div>
-                     <h5 class="mb-1">A. Lasya Sree</h5>
-                    <p class="text-muted">Coordinator (CSM)</p>
-                </div>
+        <!-- Institutional Club Reports Hub (2025 & 2026 Reports) -->
+        <div class="reports-hub-wrapper">
+          <div class="reports-hub-header">
+            <span class="hub-tag"><i class="fa-solid fa-file-pdf"></i> Official Institutional Documentation</span>
+            <h3 class="hub-title">Club Summary Reports &amp; Verified Records</h3>
+            <p class="hub-desc">All comprehensive event details, participant counts, evaluation rubrics, and judge feedback are documented in our official PDF reports below.</p>
+          </div>
+          <div class="reports-cards-grid">
+            <!-- 2026 Summary Report Card -->
+            <div class="report-download-card">
+              <div class="report-card-icon">
+                <i class="fa-solid fa-file-circle-check"></i>
+              </div>
+              <div class="report-card-info">
+                <span class="report-badge-year">Academic Year 2026–27</span>
+                <h4>Creative Club Summary Report 2026</h4>
+                <p>Complete documentation for <em>Pass the Plot</em> &amp; <em>Beyond the Mark</em> (76 participants, scoring rubrics, jury evaluations &amp; certificates).</p>
+                <a href="documents/Creative_club_summary_report_2026.pdf" target="_blank" rel="noopener" class="btn-download-report">
+                  <i class="fa-solid fa-arrow-down"></i>
+                  <span>Download 2026 Summary Report (PDF)</span>
+                </a>
+              </div>
             </div>
 
-            <!-- Team Member 3 -->
-            <div class="col-md-4">
-                <div class="team-member">
-                    <div class="image-wrapper">
-                    <img src="images/navya.jpeg"alt="P. Navya Sri">
-                    <div class="team-overlay">"A good story lives forever."</div>
-                </div>
-                    <h5 class="mb-1">P. Navya Sri</h5>
-                    <p class="text-muted">Coordinator (CSD)</p>
-                </div>
+            <!-- 2025 Club Report Card -->
+            <div class="report-download-card report-card-alt">
+              <div class="report-card-icon report-card-icon-alt">
+                <i class="fa-solid fa-book-bookmark"></i>
+              </div>
+              <div class="report-card-info">
+                <span class="report-badge-year report-badge-alt">Academic Year 2024–25</span>
+                <h4>Creative Club Annual Report 2025</h4>
+                <p>Foundational report recording inaugural activities, student filmmaking sessions, literary challenges, and member portfolios.</p>
+                <a href="documents/Creative_Club_Report.pdf" target="_blank" rel="noopener" class="btn-download-report btn-download-report-alt">
+                  <i class="fa-solid fa-arrow-down"></i>
+                  <span>Download 2025 Club Report (PDF)</span>
+                </a>
+              </div>
             </div>
+          </div>
+        </div>
 
-            <!-- Team Member 4 -->
-            <div class="col-md-4">
-                <div class="team-member">
-                     <div class="image-wrapper">
-                    <img src="images/Narendra.jpeg" alt="R. Narendra">
-                    <div class="team-overlay">"Pixels are my paint."</div>
-                    </div>
-                    <h5 class="mb-1">R. Narendra</h5>
-                    <p class="text-muted">Coordinator (CSM)</p>
-                </div>
-            </div>
+        <!-- Events 2026 Container (Streamlined & Visual) -->
+        <div id="events2026Container" class="events-2026-wrapper">
+          <!-- Filled dynamically via script.js -->
+        </div>
 
-            <!-- Team Member 5 -->
-            <div class="col-md-4">
-                <div class="team-member">
-                    <div class="image-wrapper">
-                    <img src="images/koushik.jpeg" alt="K. Venkata Naga Koushik">
-                     <div class="team-overlay">"Every frame tells a story."</div>
-                    </div>
-                    <h5 class="mb-1">K. Venkata Naga Koushik</h5>
-                    <p class="text-muted">Coordinator (CSD)</p>
-                   
-                </div>
-            </div>
-            <!-- Team Member 6 -->
-            <div class="col-md-4">
-                <div class="team-member">
-                    <div class="image-wrapper">
-                    <img src="images/Naga Vardhan.jpeg" alt="M. Naga Vardhan">
-                     <div class="team-overlay">"Code is poetry."</div>
-                    </div>
-                    <h5 class="mb-1">M. Naga Vardhan</h5>
-                    <p class="text-muted">Coordinator (CSM)</p>
-                   
-                </div>
-            </div>
-        </div> 
-    </div>
-</section>
-
-<!-- Join Us Section -->
-  <section id="join-us" class="py-5 bg-light-soft scroll-reveal">
-    <div class="container text-center">
-      <h2 class="mb-3 section-title">Join the <u>Creative Club</u> Family</h2>
-      <p class="lead mb-4">Ready to find your creative tribe? Fill out our form to get started!</p>
-
-      <!-- Sign Up Button -->
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSf3g5P98mC7WWsFS6Jt0eiNQpFQJM95ToTq42I9EgoBmUNXsQ/viewform?usp=header"
-         target="_blank"
-         class="btn btn-lg btn-secondary animated-cta-btn">
-        Join Now
-      </a>
-
-      <!-- Social Icons -->
-      <div class="mt-4">
-      <!-- LinkedIn -->
-     <a href="https://www.linkedin.com/company/pvpsit-aiml-datascience/posts/?feedView=all"
-     class="social-icon"
-     target="_blank">
-    <i class="fab fa-linkedin fa-2x"></i>
-    </a>
-    
-    
-      <!-- Club Report PDF -->
-      <a href="documents/Creative_Club_Report.pdf"
-      class="social-icon"
-      target="_blank">
-      <i class="fas fa-file-pdf fa-2x"></i>
-      </a>
       </div>
-</div>
-</section>
-  <!-- Footer -->
-  <footer class="text-center">
-    <div class="container">
-      <p>For any quries mail to : creativeclub.csmd26@gmail.com</p>
-      <p>&copy; 2025 Creative Club | PVPSIT</p>
+    </section>
+
+    <!-- =======================================================================
+         7.5. EVENT HIGHLIGHTS — 2025 ARCHIVE (FROM ORIGINAL WEBSITE)
+         ======================================================================= -->
+    <section id="highlights-2025" class="section-wrapper section-alt">
+      <div class="section-container">
+        
+        <div class="section-header">
+          <span class="section-tag">Historical Archive • 2025</span>
+          <h2 class="section-title">
+            Event Highlights <span class="italic-highlight">2025</span>
+          </h2>
+          <p class="section-subtitle">
+            Relive our inaugural club sessions, on-stage expressive rounds, and cinematic framing workshops from our founding year (as featured on our original website).
+          </p>
+        </div>
+
+        <!-- 3x3 Event Highlights Grid (Exact Original Order + Modern Polish) -->
+        <div class="highlights-grid-3x3">
+          <!-- Item 1: event1.png -->
+          <div class="highlight-item" data-photo="images/gallery/2025/event1.png" data-title="Creative Club Inaugural Assembly (2025)" data-caption="Commencement of the Creative Club session with passionate creators across CSM &amp; CSD departments.">
+            <img src="images/gallery/2025/event1.png" alt="Creative Club Inaugural Assembly" loading="lazy" onerror="this.src='images/event1-2025.png'">
+            <div class="highlight-overlay">
+              <span class="highlight-badge">Inauguration</span>
+              <div class="highlight-info">
+                <h4>Inaugural Assembly</h4>
+                <p>Welcome orientation &amp; foundation</p>
+              </div>
+              <button class="highlight-zoom-btn" aria-label="View Fullscreen"><i class="fa-solid fa-expand"></i></button>
+            </div>
+          </div>
+
+          <!-- Item 2: event5.png -->
+          <div class="highlight-item" data-photo="images/gallery/2025/event5.png" data-title="Filmmaking &amp; Visual Framing Workshop" data-caption="Mastering visual grammar, shot framing, and lighting setups during our hands-on short film workshop.">
+            <img src="images/gallery/2025/event5.png" alt="Filmmaking Workshop" loading="lazy" onerror="this.src='images/event5-2025.png'">
+            <div class="highlight-overlay">
+              <span class="highlight-badge">Cinematography</span>
+              <div class="highlight-info">
+                <h4>Filmmaking &amp; Framing</h4>
+                <p>Visual grammar &amp; camera framing</p>
+              </div>
+              <button class="highlight-zoom-btn" aria-label="View Fullscreen"><i class="fa-solid fa-expand"></i></button>
+            </div>
+          </div>
+
+          <!-- Item 3: event2.png -->
+          <div class="highlight-item" data-photo="images/gallery/2025/event2.png" data-title="On-the-Spot Expressive Round" data-caption="Participants taking the stage to articulate spontaneous narratives under impromptu prompts.">
+            <img src="images/gallery/2025/event2.png" alt="On-the-Spot Expressive Round" loading="lazy" onerror="this.src='images/event2-2025.png'">
+            <div class="highlight-overlay">
+              <span class="highlight-badge">Stage Performance</span>
+              <div class="highlight-info">
+                <h4>On-the-Spot Expressive</h4>
+                <p>Raw spontaneity &amp; stage presence</p>
+              </div>
+              <button class="highlight-zoom-btn" aria-label="View Fullscreen"><i class="fa-solid fa-expand"></i></button>
+            </div>
+          </div>
+
+          <!-- Item 4: event3.png -->
+          <div class="highlight-item" data-photo="images/gallery/2025/event3.png" data-title="Creative Dialogue &amp; Collaboration" data-caption="Cross-departmental brainstorming sessions fostering collaboration between coders, writers, and visual artists.">
+            <img src="images/gallery/2025/event3.png" alt="Creative Dialogue" loading="lazy" onerror="this.src='images/event3-2025.png'">
+            <div class="highlight-overlay">
+              <span class="highlight-badge">Collaboration</span>
+              <div class="highlight-info">
+                <h4>Creative Dialogue</h4>
+                <p>Cross-disciplinary brainstorming</p>
+              </div>
+              <button class="highlight-zoom-btn" aria-label="View Fullscreen"><i class="fa-solid fa-expand"></i></button>
+            </div>
+          </div>
+
+          <!-- Item 5: event4.png -->
+          <div class="highlight-item" data-photo="images/gallery/2025/event4.png" data-title="Story Fragment Challenge Session" data-caption="Teams dissecting narrative puzzle pieces to assemble full literary storylines under countdown pressure.">
+            <img src="images/gallery/2025/event4.png" alt="Story Fragment Challenge" loading="lazy" onerror="this.src='images/event4-2025.png'">
+            <div class="highlight-overlay">
+              <span class="highlight-badge">Collaborative Fiction</span>
+              <div class="highlight-info">
+                <h4>Story Fragment Challenge</h4>
+                <p>Plot construction from cryptic clues</p>
+              </div>
+              <button class="highlight-zoom-btn" aria-label="View Fullscreen"><i class="fa-solid fa-expand"></i></button>
+            </div>
+          </div>
+
+          <!-- Item 6: event6.png -->
+          <div class="highlight-item" data-photo="images/gallery/2025/event6.png" data-title="Storyboard Design &amp; Project Pitch" data-caption="Shot-by-shot storyboards and narrative pitches for student short film pre-production.">
+            <img src="images/gallery/2025/event6.png" alt="Storyboard Design" loading="lazy" onerror="this.src='images/event6-2025.png'">
+            <div class="highlight-overlay">
+              <span class="highlight-badge">Pre-Production</span>
+              <div class="highlight-info">
+                <h4>Storyboard Design &amp; Pitch</h4>
+                <p>Shot composition &amp; screenplay arcs</p>
+              </div>
+              <button class="highlight-zoom-btn" aria-label="View Fullscreen"><i class="fa-solid fa-expand"></i></button>
+            </div>
+          </div>
+
+          <!-- Item 7: event7.png -->
+          <div class="highlight-item" data-photo="images/gallery/2025/event7.png" data-title="Literary &amp; Spoken Word Circle" data-caption="Extempore poetry and reflective spoken-word circles celebrating the spoken word.">
+            <img src="images/gallery/2025/event7.png" alt="Literary Circle" loading="lazy" onerror="this.src='images/event7-2025.png'">
+            <div class="highlight-overlay">
+              <span class="highlight-badge">Spoken Word</span>
+              <div class="highlight-info">
+                <h4>Literary &amp; Poetry Circle</h4>
+                <p>Intimate open-mic expressions</p>
+              </div>
+              <button class="highlight-zoom-btn" aria-label="View Fullscreen"><i class="fa-solid fa-expand"></i></button>
+            </div>
+          </div>
+
+          <!-- Item 8: event8.png -->
+          <div class="highlight-item" data-photo="images/gallery/2025/event8.png" data-title="AI Comic Creation Masterclass" data-caption="Hands-on digital workflow converting written character arcs into AI-generated comic panels.">
+            <img src="images/gallery/2025/event8.png" alt="AI Comic Creation" loading="lazy" onerror="this.src='images/event8-2025.png'">
+            <div class="highlight-overlay">
+              <span class="highlight-badge">AI Creative Tech</span>
+              <div class="highlight-info">
+                <h4>AI Story-to-Comic</h4>
+                <p>Prompt engineering &amp; digital art</p>
+              </div>
+              <button class="highlight-zoom-btn" aria-label="View Fullscreen"><i class="fa-solid fa-expand"></i></button>
+            </div>
+          </div>
+
+          <!-- Item 9: event9.png -->
+          <div class="highlight-item" data-photo="images/gallery/2025/event9.png" data-title="Annual Showcase &amp; Coordinator Felicitation" data-caption="Celebrating student milestones, awarding certificates, and passing the torch to the incoming cohort.">
+            <img src="images/gallery/2025/event9.png" alt="Annual Showcase" loading="lazy" onerror="this.src='images/event9-2025.png'">
+            <div class="highlight-overlay">
+              <span class="highlight-badge">Annual Felicitation</span>
+              <div class="highlight-info">
+                <h4>Annual Showcase &amp; Awards</h4>
+                <p>Milestone awards &amp; mentor recognition</p>
+              </div>
+              <button class="highlight-zoom-btn" aria-label="View Fullscreen"><i class="fa-solid fa-expand"></i></button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         8. ACTIVITIES & WHAT WE DO SECTION (2025 & 2026 BATCH SWITCHER)
+         ======================================================================= -->
+    <section id="activities" class="section-wrapper section-alt">
+      <div class="section-container">
+        
+        <div class="section-header">
+          <span class="section-tag">What We Do</span>
+          <h2 class="section-title">
+            Signature Workshops &amp; <span class="italic-highlight">Creative Labs</span>
+          </h2>
+          <p class="section-subtitle">
+            Switch between our current 2026 active challenges and our foundational 2025 creative labs.
+          </p>
+        </div>
+
+        <!-- Activities Batch Switcher Tabs (Like Coordinators) -->
+        <div class="tab-controls-wrapper">
+          <div class="tab-switcher" role="tablist" aria-label="Activities Year Switcher">
+            <button class="tab-btn activity-tab-btn active" data-year="year2026" role="tab" aria-selected="true">
+              <i class="fa-solid fa-bolt"></i>
+              <span>Current Challenges — 2026 Batch</span>
+              <span class="badge-pill">Active</span>
+            </button>
+            <button class="tab-btn activity-tab-btn" data-year="year2025" role="tab" aria-selected="false">
+              <i class="fa-solid fa-star"></i>
+              <span>Signature Workshops — 2025 Batch</span>
+              <span class="badge-pill">Foundational</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Activities Grid -->
+        <div id="activitiesGrid" class="activities-grid" aria-live="polite">
+          <!-- Filled dynamically via script.js from data.js -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         8. GALLERY SECTION (2025 & 2026 ARCHIVES)
+         ======================================================================= -->
+    <section id="gallery" class="section-wrapper section-alt">
+      <div class="section-container">
+        
+        <div class="section-header">
+          <span class="section-tag">Visual Archive</span>
+          <h2 class="section-title">
+            Event Highlights: <span class="italic-highlight">2025 & 2026</span>
+          </h2>
+          <p class="section-subtitle">
+            Experience our on-stage challenges, student film sessions, interactive workshops, and collaborative gatherings directly on the page.
+          </p>
+        </div>
+
+        <!-- Gallery Controls Bar -->
+        <div class="gallery-controls-bar">
+          <!-- Year Switcher Pills -->
+          <div class="gallery-year-pills" role="tablist" aria-label="Gallery Year Tabs">
+            <button class="gallery-year-btn active" data-year="year2025" role="tab" aria-selected="true">
+              <i class="fa-solid fa-calendar-check"></i> 2025 Archive
+            </button>
+            <button class="gallery-year-btn" data-year="year2026" role="tab" aria-selected="false">
+              <i class="fa-solid fa-clock-rotate-left"></i> 2026 Archive
+            </button>
+          </div>
+
+          <!-- Category Filter Chips -->
+          <div class="gallery-filter-chips" role="group" aria-label="Category Filters">
+            <button class="filter-chip active" data-category="all">All Photos</button>
+            <button class="filter-chip" data-category="events">Events & Stages</button>
+            <button class="filter-chip" data-category="posters">Posters & Visuals</button>
+            <button class="filter-chip" data-category="creatives">Creative Tech</button>
+            <button class="filter-chip" data-category="behind-the-scenes">Behind The Scenes</button>
+          </div>
+        </div>
+
+        <!-- Masonry Dynamic Gallery Grid -->
+        <div id="galleryGrid" class="gallery-grid" aria-live="polite">
+          <!-- Filled dynamically via script.js from data.js -->
+        </div>
+
+      </div>
+    </section>
+
+
+
+    <!-- =======================================================================
+         10. JOIN US / CTA BANNER
+         ======================================================================= -->
+    <section id="join" class="section-wrapper">
+      <div class="section-container">
+        
+        <div class="cta-banner-wrapper">
+          <div class="cta-content">
+            <span class="section-tag" style="margin-bottom: 20px;">BECOME A CREATOR</span>
+            <h2 class="cta-title">
+              Ready to Find Your <span>Creative Community?</span>
+            </h2>
+            <p class="cta-desc">
+              Whether your medium is ink, code, photography, video frames, or generative AI — your ideas belong here. Join us in shaping campus creative culture.
+            </p>
+
+            <div class="cta-buttons-row">
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSf3g5P98mC7WWsFS6Jt0eiNQpFQJM95ToTq42I9EgoBmUNXsQ/viewform?usp=header" target="_blank" rel="noopener" class="btn-primary-glow">
+                <span>Join Creative Club Now</span>
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+              <a href="documents/Creative_Club_Report.pdf" target="_blank" rel="noopener" class="btn-outline-glow">
+                <i class="fa-solid fa-file-pdf"></i>
+                <span>Download Club Report</span>
+              </a>
+            </div>
+
+            <div class="cta-social-bar">
+              <a href="https://www.linkedin.com/company/pvpsit-aiml-datascience/posts/?feedView=all" target="_blank" rel="noopener" class="cta-social-link">
+                <i class="fa-brands fa-linkedin"></i>
+                <span>PVPSIT AIML & Data Science LinkedIn</span>
+              </a>
+              <span style="color: var(--border-medium);">|</span>
+              <a href="mailto:creativeclub.csmd26@gmail.com" class="cta-social-link">
+                <i class="fa-solid fa-envelope"></i>
+                <span>creativeclub.csmd26@gmail.com</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================================
+       11. MASTER FOOTER
+       ========================================================================= -->
+  <footer id="contact" class="main-footer">
+    <div class="section-container">
+      <div class="footer-top-grid">
+        
+        <!-- Brand & Mission Column -->
+        <div class="footer-brand-col">
+          <div class="footer-logo-wrap">
+            <img src="images/branding/logo.svg" alt="Creative Club Logo">
+            <div>
+              <span class="footer-brand-title">Creative Club</span>
+              <span class="footer-brand-sub">CSM & CSD • PVPSIT</span>
+            </div>
+          </div>
+          <p class="footer-about-text">
+            Where soul meets screen. Fostering a vibrant community of writers, designers, short filmmakers, and creative technologists at PVPSIT.
+          </p>
+          <div class="footer-social-icons">
+            <a href="https://www.linkedin.com/company/pvpsit-aiml-datascience/posts/?feedView=all" target="_blank" rel="noopener" class="footer-social-btn" title="LinkedIn" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="documents/Creative_Club_Report.pdf" target="_blank" rel="noopener" class="footer-social-btn" title="Club Report PDF" aria-label="Club Report PDF">
+              <i class="fa-solid fa-file-pdf"></i>
+            </a>
+            <a href="mailto:creativeclub.csmd26@gmail.com" class="footer-social-btn" title="Email Us" aria-label="Email Us">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links Column -->
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About the Club</a></li>
+            <li><a href="#coordinators">Coordinators (2025/2026)</a></li>
+            <li><a href="#events-2026">Events 2026 &amp; Winners</a></li>
+            <li><a href="#highlights-2025">2025 Event Highlights</a></li>
+            <li><a href="#activities">Workshops &amp; Labs</a></li>
+            <li><a href="#gallery">Visual Gallery Archive</a></li>
+          </ul>
+        </div>
+
+        <!-- Club Activities Column -->
+        <div>
+          <h4 class="footer-col-title">Creative Labs</h4>
+          <ul class="footer-links-list">
+            <li><a href="#activities">Expressive On-the-Spot</a></li>
+            <li><a href="#activities">Story Fragment Challenge</a></li>
+            <li><a href="#activities">Short Film Creation</a></li>
+            <li><a href="#activities">AI Story-to-Comic</a></li>
+            <li><a href="#activities">PixelCraft Design Labs</a></li>
+          </ul>
+        </div>
+
+        <!-- Department & Contact Column -->
+        <div class="footer-contact-info">
+          <h4 class="footer-col-title">Affiliation & Contact</h4>
+          <p>
+            <strong>Prasad V. Potluri Siddhartha Institute of Technology</strong><br>
+            Autonomous | AICTE Approved | NAAC A+<br>
+            Department of CSE (AI & ML and Data Science)<br>
+            Kanuru, Vijayawada - 520007, Andhra Pradesh
+          </p>
+          <a href="mailto:creativeclub.csmd26@gmail.com" class="footer-email-link">
+            <i class="fa-solid fa-paper-plane"></i>
+            <span>creativeclub.csmd26@gmail.com</span>
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <span>&copy; 2026 Creative Club | PVPSIT. Where Soul Meets Screen.</span>
+        <span>Crafted for Student Creators • CSM & CSD</span>
+      </div>
     </div>
   </footer>
 
+  <!-- =========================================================================
+       12. FULLSCREEN INTERACTIVE LIGHTBOX MODAL
+       ========================================================================= -->
+  <div id="lightboxModal" class="lightbox-modal" role="dialog" aria-modal="true" aria-label="Image Lightbox Viewer">
+    <div class="lightbox-container">
+      <div class="lightbox-header">
+        <span id="lightboxCounter" class="lightbox-counter">1 of 1</span>
+        <button id="lightboxClose" class="lightbox-close-btn" aria-label="Close Lightbox">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+      
+      <div class="lightbox-body">
+        <button id="lightboxPrev" class="lightbox-nav-btn lightbox-prev" aria-label="Previous Image">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <img id="lightboxImg" class="lightbox-img" src="" alt="">
+        <button id="lightboxNext" class="lightbox-nav-btn lightbox-next" aria-label="Next Image">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
 
-  <script src="script.js"></script>
-  <!-- Bootstrap JS Bundle -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+      <div class="lightbox-footer">
+        <h3 id="lightboxTitle" class="lightbox-title"></h3>
+        <p id="lightboxCaption" class="lightbox-caption"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       13. BACK TO TOP BUTTON
+       ========================================================================= -->
+  <button id="backToTopBtn" class="back-to-top-btn" title="Back to Top" aria-label="Back to Top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- =========================================================================
+       14. SCRIPTS
+       ========================================================================= -->
+  <script src="data.js?v=20261024b"></script>
+  <script src="script.js?v=20261024b"></script>
 </body>
 </html>
